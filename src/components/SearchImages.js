@@ -24,7 +24,7 @@ export default class Image extends Component {
 					<Masonry
 						className={'Grid'}
 						elementType={'div'}
-						options={{ gutter: 8, fitWidth: true }}
+						options={{ gutter: 14, fitWidth: true }}
 					>
 						{images.map(image => (
 							<div key={image.id}>
