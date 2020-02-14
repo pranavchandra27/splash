@@ -1,92 +1,101 @@
 .Grid {
-	margin: 2rem auto;
-	overflow: hidden;
+  margin: 2rem auto;
+  overflow: hidden;
 }
 
 .Image {
-	width: 400px;
-	height: 100%;
-	position: relative;
-	float: left;
-	overflow: hidden;
-	margin-bottom: 14px;
+  width: 400px;
+  height: 100%;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin-bottom: 14px;
 }
 
 .Image .img {
-	display: block;
-	width: 100%;
-	object-fit: cover;
-	box-shadow: 1px 2px 5px 2px rgba(75, 75, 75, 0.377);
-	transition: all 0.3s;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 1px 2px 5px 2px rgba(75, 75, 75, 0.377);
+  transition: all 0.3s;
 }
 
 .bottom-info {
-	opacity: 0;
-	width: 100%;
-	height: 50px;
-	bottom: 0;
-	left: 0;
-	position: absolute;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	transition: all 0.3s ease;
-	background: linear-gradient(to bottom, #00000009 5%, #0f0f0fde 100%, #000000a4 100%);
+  opacity: 0;
+  width: 100%;
+  height: 50px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  background: linear-gradient(
+    to bottom,
+    #00000009 5%,
+    #0f0f0fde 100%,
+    #000000a4 100%
+  );
 }
 
 .user-info {
-	padding-left: 8px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  padding-left: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .user-info img {
-	border-radius: 50%;
-	width: 2.2rem;
+  border-radius: 50%;
+  width: 2.2rem;
 }
 
 .user-info a {
-	padding: 0 10px;
-	color: #ffffff;
-	text-decoration: none;
+  padding: 0 10px;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .user-info a:hover {
-	color: rgb(190, 190, 190);
+  color: rgb(190, 190, 190);
 }
 
 .download-btn {
-	padding-right: 8px;
-	color: #ffffff;
+  padding-right: 8px;
+  color: #ffffff;
 }
 
 .download-btn:hover {
-	color: rgb(190, 190, 190);
+  color: rgb(190, 190, 190);
 }
 
 .Image:hover .bottom-info {
-	opacity: 1;
+  opacity: 1;
 }
 
 .Image:hover .img {
-	transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 @media screen and (max-width: 1280px) {
-	.Image {
-		width: 320px;
-	}
+  .Image {
+    width: 320px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-	.Image {
-		width: 240px;
-	}
+  .Image {
+    width: 240px;
+  }
 }
 
-@media screen and (max-width: 580px) {
-	.Image {
-		width: 160px;
-	}
+@media screen and (max-width: 540px) {
+  .Image {
+    width: 165px;
+  }
+
+  .bottom-info {
+    display: none;
+  }
 }

@@ -8,20 +8,20 @@ import SearchImages from './components/SearchImages';
 import Navbar from './components/Navbar';
 
 function App() {
-	return (
-		<Router>
-			<ImageProvider>
-				<SearchProvider>
-					<Images />
-					<Navbar />
-					<Switch>
-						<Route exact path='/' component={NewImage} />
-						<Route exact path='/search' component={SearchImages} />
-					</Switch>
-				</SearchProvider>
-			</ImageProvider>
-		</Router>
-	);
+  return (
+    <Router>
+      <ImageProvider>
+        <SearchProvider>
+          <Images />
+          <Navbar />
+          <Switch>
+            <Route exact path="/" component={NewImage} />
+            <Route exact path="/search" component={SearchImages} />
+          </Switch>
+        </SearchProvider>
+      </ImageProvider>
+    </Router>
+  );
 }
 
 export default App;
