@@ -13,7 +13,7 @@ function App() {
       <ImageProvider>
         <SearchProvider>
           <Images />
-          <Route render={props => <Navbar {...props} />} />
+          <Route component={Navbar} />
           <Switch>
             <Route exact path="/" component={NewImage} />
             <Route exact path="/search" component={SearchImages} />
