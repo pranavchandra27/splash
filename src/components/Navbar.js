@@ -12,7 +12,7 @@ class Navbar extends Component {
           <div className="Logo">
             {location.pathname === '/search' ? (
               <Link className="Go-back" to="/">
-                <i className="fas fa-arrow-left"></i>
+                <i className="fas fa-chevron-left"></i>
                 Home
               </Link>
             ) : (

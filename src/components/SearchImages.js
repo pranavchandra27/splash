@@ -11,7 +11,7 @@ export default class Image extends Component {
   render() {
     const { images, loadNewImages } = this.context;
     if (!images.length) {
-      return <h1 className="Empty">Please Search For Some Images :)</h1>;
+      return <h1 className="Empty">Please Search For Some Photos :)</h1>;
     }
     return (
       <React.Fragment>

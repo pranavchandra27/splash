@@ -31,7 +31,7 @@ button {
   position: absolute;
   right: 0;
   background-color: rgba(0, 0, 0, 0);
-  color: #61677c;
+  color: #bbb;
   font-weight: bold;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
@@ -44,7 +44,7 @@ button {
 }
 
 button:hover {
-  color: #9599a8;
+  color: #999;
 }
 button:active {
   box-shadow: inset 1px 1px 2px #babecc, inset -1px -1px 2px #fff;

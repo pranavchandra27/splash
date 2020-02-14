@@ -85,7 +85,7 @@
   text-align: center;
   padding-top: 20vh;
   font-size: 4rem;
-  color: #75492c;
+  color: #babecc;
   text-shadow: 2px 3px 3px #575757;
 }
 
@@ -108,5 +108,11 @@
 
   .bottom-info {
     display: none;
+  }
+
+  .Empty {
+    padding: 30vh 1rem 0 1rem;
+    font-size: 2rem;
+    text-shadow: 1px 1px 2px #575757;
   }
 }
