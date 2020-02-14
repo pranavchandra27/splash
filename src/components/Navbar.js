@@ -5,13 +5,19 @@ import { Link } from 'react-router-dom';
 
 class Navbar extends Component {
   render() {
+    const { location } = this.props;
     return (
       <div className="Navbar">
         <div className="container">
           <div className="Logo">
-            <h1>
-              <Link to="/">Splash</Link>
-            </h1>
+            {location.pathname === '/search' ? (
+              <Link className="Go-back" to="/">
+                <i className="fas fa-arrow-left"></i>
+                Home
+              </Link>
+            ) : (
+              <h1>Splash</h1>
+            )}
           </div>
           <Search className="Navbar-search" />
         </div>

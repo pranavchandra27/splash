@@ -1,26 +1,36 @@
 @import 'https://fonts.googleapis.com/css?family=Bangers&display=swap';
 
 .Navbar {
-	height: 60px;
-	background: #75492c;
-	color: #fff;
+  height: 60px;
+  background: #75492c;
+  color: #fff;
 }
 
 .container {
-	width: 90%;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 100%;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
 }
 
 .Navbar h1 {
-	font-family: 'Bangers', sans-serif;
-	letter-spacing: 3px;
+  font-family: 'Bangers', sans-serif;
+  letter-spacing: 3px;
 }
 
 .Navbar a {
-	color: #fff;
-	text-decoration: none;
+  color: #fff;
+  text-decoration: none;
+}
+
+.Navbar .Go-back {
+  font-size: 1.4rem;
+  letter-spacing: -0.2px;
+}
+
+.Navbar .Go-back i {
+  font-size: 1.2rem;
+  margin-right: 10px;
 }
