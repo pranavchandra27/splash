@@ -11,12 +11,14 @@ class Navbar extends Component {
         <div className="container">
           <div className="Logo">
             {location.pathname === '/search' ? (
-              <Link className="Go-back" to="/">
+              <Link className="Go-back" to="/photos">
                 <i className="fas fa-chevron-left"></i>
-                Home
+                Photos
               </Link>
             ) : (
-              <h1>Splash</h1>
+              <h1>
+                <Link to="/">Splash</Link>
+              </h1>
             )}
           </div>
           <Search className="Navbar-search" />

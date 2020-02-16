@@ -2,11 +2,11 @@
 
 .Navbar {
   height: 60px;
-  background: #ebecf0;
+  background: #40e0d0;
   box-shadow: 1px 1px 2px #aaa;
 }
 
-.container {
+.Navbar .container {
   width: 90%;
   margin: 0 auto;
   display: flex;
@@ -15,24 +15,23 @@
   height: 100%;
 }
 
-.Navbar h1 {
+.Navbar .container h1 {
   font-family: 'Bangers', sans-serif;
   letter-spacing: 3px;
-  color: #babecc;
-  text-shadow: 1px 1px 1px #888;
+  color: #ffffff;
 }
 
 .Navbar a {
-  color: #888;
+  color: #eeeeee;
   text-decoration: none;
 }
 
-.Navbar .Go-back {
+.Navbar .container .Go-back {
   font-size: 1.3rem;
   letter-spacing: -0.2px;
 }
 
-.Navbar .Go-back i {
+.Navbar .container .Go-back i {
   font-size: 1.2rem;
   margin-right: 8px;
 }
