@@ -64,6 +64,7 @@ class HomeSearch extends Component {
           <div className="HomeSearch-Form">
             <form onSubmit={this.handleSubmit}>
               <input
+                required
                 className="search"
                 type="search"
                 value={query}

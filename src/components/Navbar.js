@@ -17,9 +17,7 @@ class Navbar extends Component {
               </Link>
             ) : (
               <h1>
-                <Link to="/">
-                  Splash <span>free photos</span>
-                </Link>
+                <Link to="/">Splash</Link>
               </h1>
             )}
           </div>

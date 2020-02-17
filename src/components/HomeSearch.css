@@ -1,3 +1,5 @@
+@import 'https://fonts.googleapis.com/css?family=Bangers&display=swap';
+
 .HomeSearch {
   position: relative;
   height: 80vh;
@@ -28,7 +30,7 @@
 .heading {
   z-index: 2;
   position: relative;
-  width: 650px;
+  width: 750px;
 }
 
 .heading h1 {
@@ -53,20 +55,35 @@
   margin-top: 20px;
 }
 
+.HomeSearch-Form form:hover::before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  bottom: -6px;
+  right: -6px;
+  border: 10px rgba(50, 50, 50, 0.4) solid;
+  border-radius: 5px;
+}
+
 .HomeSearch-Form .search {
-  width: 650px;
-  height: 50px;
+  position: relative;
+  z-index: 5;
+  width: 750px;
+  height: 60px;
   outline: none;
   border: none;
   border-radius: 5px;
-  padding: 0 10px 0 70px;
+  font-size: 16px;
+  padding: 0 10px 0 80px;
 }
 
 .HomeSearch-Form .submit-btn {
+  z-index: 5;
   position: absolute;
   top: 0;
   left: 0;
-  height: 50px;
+  height: 60px;
   width: 10%;
   font-size: 18px;
   border: none;
@@ -109,13 +126,14 @@
   padding-bottom: 10px;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 780px) {
   .heading {
     width: 100%;
     padding: 0 1rem;
   }
   .heading h1 {
-    font-size: 52px;
+    font-size: 42px;
+    padding-top: 10vh;
   }
 
   .heading p {
@@ -129,8 +147,17 @@
 
   .HomeSearch-Form .search {
     width: 100%;
+    height: 50px;
+    padding-left: 55px;
   }
-}
 
-@media screen and (max-width: 500px) {
+  .HomeSearch-Form .submit-btn {
+    height: 50px;
+    width: 50px;
+  }
+
+  .photo-info p {
+    font-family: sans-serif;
+    font-size: 11px;
+  }
 }

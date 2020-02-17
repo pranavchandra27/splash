@@ -25,7 +25,7 @@ export default class Image extends Component {
             className={'Grid'}
             elementType={'div'}
             options={{
-              gutter: 14,
+              gutter: 20,
               fitWidth: true
             }}
           >
@@ -33,9 +33,7 @@ export default class Image extends Component {
               <div key={image.id}>
                 <div
                   className="SearchImage"
-                  style={{
-                    background: image.color
-                  }}
+                  style={{ background: image.color }}
                 >
                   <a
                     rel="noopener noreferrer"

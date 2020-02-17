@@ -26,6 +26,7 @@ class Search extends Component {
         <div>
           <form className="Search" onSubmit={this.handleSubmit}>
             <input
+              required
               className="Search-input"
               type="text"
               value={query}
@@ -46,6 +47,7 @@ class Search extends Component {
           <Redirect to="search" />
           <form className="Search" onSubmit={this.handleSubmit}>
             <input
+              required
               className="Search-input"
               type="text"
               value={query}
