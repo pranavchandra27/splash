@@ -1,5 +1,5 @@
 .Grid {
-  margin: 2rem auto;
+  margin: auto;
   overflow: hidden;
 }
 
@@ -44,6 +44,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
 }
 
 .user-info img {
@@ -51,10 +52,9 @@
   width: 2.2rem;
 }
 
-.user-info a {
+.user-name {
   padding: 0 10px;
   color: #ffffff;
-  text-decoration: none;
 }
 
 .user-info a:hover {
@@ -75,7 +75,7 @@
 }
 
 .Image:hover .img {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 @media screen and (max-width: 1280px) {

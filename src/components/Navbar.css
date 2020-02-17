@@ -2,7 +2,7 @@
 
 .Navbar {
   height: 60px;
-  background: #40e0d0;
+  background: #ffffff;
   box-shadow: 1px 1px 2px #aaa;
 }
 
@@ -18,11 +18,15 @@
 .Navbar .container h1 {
   font-family: 'Bangers', sans-serif;
   letter-spacing: 3px;
-  color: #ffffff;
+}
+
+.Navbar .container h1 span {
+  display: block;
+  font-size: 14px;
 }
 
 .Navbar a {
-  color: #eeeeee;
+  color: #363636;
   text-decoration: none;
 }
 

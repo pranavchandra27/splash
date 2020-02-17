@@ -11,7 +11,7 @@ export default class Image extends Component {
   render() {
     const { images, loadNewImages } = this.context;
     if (!images.length) {
-      return <h1 className="Empty">Please Search For Some Photos :)</h1>;
+      return <Spinner />;
     }
     return (
       <React.Fragment>
@@ -50,11 +50,13 @@ export default class Image extends Component {
                   </a>
                   <div className="bottom-info">
                     <div className="user-info">
-                      <img
-                        src={image.user.profile_image.small}
-                        alt={image.user.name}
-                      />
-                      <p>
+                      <a href={image.user.links.html}>
+                        <img
+                          src={image.user.profile_image.small}
+                          alt={image.user.name}
+                        />
+                      </a>
+                      <p className="user-name">
                         <a href={image.user.links.html}>{image.user.name}</a>
                       </p>
                     </div>

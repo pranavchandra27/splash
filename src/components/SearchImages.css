@@ -1,5 +1,5 @@
 .Grid {
-  margin: 14px auto;
+  margin: 2rem auto;
   overflow: hidden;
 }
 
@@ -51,7 +51,7 @@
   width: 2.2rem;
 }
 
-.user-info a {
+.user-name a {
   padding: 0 10px;
   color: #ffffff;
   text-decoration: none;

@@ -1,0 +1,136 @@
+.HomeSearch {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.HomeSearch::before {
+  z-index: 1;
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.bgImg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.heading {
+  z-index: 2;
+  position: relative;
+  width: 650px;
+}
+
+.heading h1 {
+  padding-top: 20vh;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 62px;
+  font-family: 'Bangers', sans-serif;
+  letter-spacing: 2px;
+}
+
+.heading p {
+  font-size: 28px;
+  color: #eeffee;
+  font-weight: 400;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.HomeSearch-Form form {
+  z-index: 2;
+  position: relative;
+  margin-top: 20px;
+}
+
+.HomeSearch-Form .search {
+  width: 650px;
+  height: 50px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 10px 0 70px;
+}
+
+.HomeSearch-Form .submit-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 10%;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #aaaaaa;
+  border-radius: 5px;
+}
+
+.HomeSearch-Form .submit-btn:hover {
+  color: dimgray;
+}
+.photo-info {
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  align-items: flex-end;
+}
+
+.photo-info p {
+  font-family: sans-serif;
+  font-size: 13px;
+}
+
+.photo-info a {
+  text-decoration: none;
+  color: #eee;
+}
+
+.photo-author {
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.photo-page {
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 680px) {
+  .heading {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .heading h1 {
+    font-size: 52px;
+  }
+
+  .heading p {
+    font-size: 18px;
+  }
+
+  .HomeSearch-Form {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .HomeSearch-Form .search {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+}

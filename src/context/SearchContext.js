@@ -12,7 +12,8 @@ export class SearchProvider extends Component {
     images: [],
     page: 1,
     query: '',
-    relatedSearch: []
+    relatedSearch: [],
+    redirect: false
   };
 
   handleChange = e => {
@@ -23,26 +24,31 @@ export class SearchProvider extends Component {
     this.setState({ images: this.state.images.concat(data) });
   };
 
-  loadMore = () => {
-    this.setState({ page: this.state.page + 1 });
-    Axios.get(
+  loadMore = async () => {
+    await Axios.get(
       `${apiUrl}/search?client_id=${apiKey}&page=${this.state.page}&per_page=30&query=${this.state.query}`
     ).then(res => {
       console.log(res.data);
       this.addImages(res.data.photos.results);
     });
+    this.setState({ page: this.state.page + 1 });
+  };
+
+  changeRedirectState = state => {
+    this.setState({ redirect: state });
   };
 
   render() {
     return (
       <SearchContext.Provider
         value={{
+          redirect: this.state.redirect,
           query: this.state.query,
           images: this.state.images,
           addImages: this.addImages,
           loadNewImages: this.loadMore,
           handleChange: this.handleChange,
-          handleClick: this.handleClick
+          changeRedirectState: this.changeRedirectState
         }}
       >
         {this.props.children}
